@@ -75,8 +75,6 @@ daraja.stk-push-url=https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequ
 daraja.stk-query-url=https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query
 ```
 
-> ⚠️ Never commit your `consumer-key` and `consumer-secret` to version control.
-
 ## Database Setup
 
 ```sql
