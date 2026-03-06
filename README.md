@@ -13,11 +13,11 @@ A Spring Boot application that integrates with Safaricom's Daraja API to enable 
 
 ## Features
 
-- 🔐 Daraja OAuth2 access token generation
-- 📲 STK Push (Lipa Na M-Pesa) initiation
-- 📬 Safaricom payment callback handling
-- 🔍 Transaction status check (local DB + Daraja query)
-- 💾 MySQL transaction persistence
+- Daraja OAuth2 access token generation
+- STK Push (Lipa Na M-Pesa) initiation
+- Safaricom payment callback handling
+- Transaction status check (local DB + Daraja query)
+- MySQL transaction persistence
 
 ## Project Structure
 
@@ -42,7 +42,7 @@ com.hezron.stkpush
 
 ## Prerequisites
 
-- Java 17 or 21
+- Java 17+
 - MySQL running locally
 - [Safaricom Daraja sandbox account](https://developer.safaricom.co.ke)
 - [ngrok](https://ngrok.com) (for exposing localhost callback URL)
@@ -50,6 +50,10 @@ com.hezron.stkpush
 ## Configuration
 
 Create your `application.properties` with the following:
+
+or
+
+Copy `application-example.properties` to `application.properties` and fill in your credentials.
 
 ```properties
 # Server
@@ -80,9 +84,6 @@ daraja.stk-query-url=https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query
 ```sql
 CREATE DATABASE mpesa_db;
 ```
-
-## Setup
-Copy `application-example.properties` to `application.properties` and fill in your credentials.
 
 Spring JPA will auto-create the `mpesa_transactions` table on first run.
 
