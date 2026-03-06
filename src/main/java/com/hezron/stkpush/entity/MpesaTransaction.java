@@ -19,6 +19,8 @@ public class MpesaTransaction {
     private Double amount;
     private String checkoutRequestID;
     private String merchantRequestID;
+    private String mpesaReceiptNumber;
+    private String transactionDate;
     private String resultCode;
     private String resultDesc;
     private String status;

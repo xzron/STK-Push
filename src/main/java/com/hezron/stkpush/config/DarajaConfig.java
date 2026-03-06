@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class DarajaConfig {
     private String consumerKey;
     private String consumerSecret;
-    private String shortCode;
+    private String shortcode;
     private String passKey;
     private String callbackUrl;
     private String authUrl;
