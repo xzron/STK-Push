@@ -51,10 +51,6 @@ com.hezron.stkpush
 
 Create your `application.properties` with the following:
 
-or
-
-Copy `application-example.properties` to `application.properties` and fill in your credentials.
-
 ```properties
 # Server
 server.port=8082
@@ -78,6 +74,9 @@ daraja.auth-url=https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=cli
 daraja.stk-push-url=https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest
 daraja.stk-query-url=https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query
 ```
+   or
+
+Copy `application-example.properties` to `application.properties` and fill in your credentials.
 
 ## Database Setup
 
